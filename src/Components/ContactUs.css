@@ -104,6 +104,13 @@ body{
     color: white;
     font-variant: small-caps;
 }
+.form-btn:hover{
+    color: black;
+    background-color:seagreen ;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    
+}
 
 .error {
     color: red;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactUs.css';
+import {API_BASE_URL} from './Config'
 import { FaHome,  FaMailBulk, FaPhone } from "react-icons/fa";
 
 function ContactUs() {
@@ -52,8 +53,10 @@ function ContactUs() {
 
     // Submit the form
     if (isValid) {
-      console.log(name, email, phone, message);
-      fetch('http://localhost:5000/B_ContactUs', {
+     
+    console.log(name, email, phone, message);
+    const API_URL = API_BASE_URL + '/api/ContactUs';
+      fetch(API_URL, {
         method: 'POST',
         crossDomain: true,
         headers: {
@@ -73,6 +76,7 @@ function ContactUs() {
           window.location.reload();
         });
     }
+
   };
 
   return (

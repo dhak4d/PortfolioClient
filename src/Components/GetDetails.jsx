@@ -1,10 +1,15 @@
 import React from 'react'
+import {API_BASE_URL} from './Config'
 import { useState } from 'react';
 
 export default function GetDetails() {
+  const test = API_BASE_URL + '/api/GetAllContactUs';
+  console.log(test);
+  
     const [data, setData] = useState([]);
     const getAllUser = () => {
-        fetch("http://localhost:5000/B_GetAllContactUs", {
+        fetch(test, {
+        // fetch("https://mango-backend.onrender.com/B_GetAllContactUs", {
           method: "GET",
         })
           .then((res) => res.json())

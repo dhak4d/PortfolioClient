@@ -3,12 +3,14 @@ import './Home.css';
 import owner from 'D:/Mango Workspace/Capston_Project/frontend/src/Images/owner.png'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
+import {API_BASE_URL} from './Config'
 
 export default function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/B_GetAboutMe", {
+    const API_URL = API_BASE_URL + '/api/GetAboutMe';
+    fetch(API_URL, {
       method: "GET",
     })
       .then((res) => res.json())
