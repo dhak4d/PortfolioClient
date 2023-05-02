@@ -133,7 +133,7 @@ body{
     margin: 10px;
 }
 
-.m-col p{
+.m-col div{
     margin-left: 32px;
     color: white;
 }

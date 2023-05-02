@@ -48,7 +48,9 @@ export default function Home() {
               My skill set includes proficiency in JavaScript, HTML, CSS, and other relevant programming languages.</p> */}
 
               {(data.length !== 0) && <ul>
+               
                 {data.map((res) => {
+                  
                   return <li>
                     {res.meData}
                   </li>

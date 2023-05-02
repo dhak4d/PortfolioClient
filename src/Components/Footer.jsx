@@ -6,6 +6,7 @@ import twitter from 'D:/Mango Workspace/Capston_Project/frontend/src/Images/twit
 import instagram from 'D:/Mango Workspace/Capston_Project/frontend/src/Images/instagram.svg'
 import github from 'D:/Mango Workspace/Capston_Project/frontend/src/Images/github.svg'
 
+
 export default function Footer() {
   return (
   <>
@@ -16,7 +17,8 @@ export default function Footer() {
       <Link to='https://instagram.com/mangla_nagar13?igshid=ZDdkNTZiNTM='><img src={instagram} alt='instagram Mango' className='social-svg' ></img></Link>
       <Link to='https://github.com/dhak4d'><img src={github} alt='github Mango' className='social-svg' ></img></Link>
     </div>
-    <div className='copyright'>2023 &copy;All Rights Reserved | Build with ♡ by Mango </div>
+    <div className='copyright'>2023 &copy;All Rights Reserved | Build with ♡ by < Link to='https://flowcv.me/mangla-nagar' style={{color:'grey'
+  }}>Mango</Link></div>
   </div>
   </>
  
