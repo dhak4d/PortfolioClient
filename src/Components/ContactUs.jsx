@@ -138,28 +138,28 @@ function ContactUs() {
         <div className='contact-col'>
           <div className='m-col'>
             <h2 className='icon'><FaHome />   Address</h2>
-            <div>
-              {(data.length !== 0) && <ul>
+            <div>Gandhi Nagar, Indore 453112
+              {/* {(data.length !== 0) && <ul>
                 <li>{data[0].address}</li>
-              </ul>}
+              </ul>} */}
             </div>
           </div>
 
           <div className='m-col'>
             <h2 className='icon' ><FaPhone />   Phone</h2>
-            <div>
-              {(data.length !== 0) && <ul>
+            <div>+91 8435125742
+              {/* {(data.length !== 0) && <ul>
                 <li>{data[0].phone}</li>
-              </ul>}
+              </ul>} */}
             </div>
           </div>
 
           <div className='m-col'>
             <h2 className='icon' ><FaMailBulk />   Email</h2>
-            <div>
-              {(data.length !== 0) && <ul>
+            <div>manglanagar91@gmail.com
+              {/* {(data.length !== 0) && <ul>
                 <li>{data[0].email}</li>
-              </ul>}
+              </ul>} */}
             </div>
           </div>
         </div>
