@@ -104,7 +104,7 @@ function ContactUs() {
 
       <div className='form-container'>
         <form className="form" onSubmit={handleSubmit}>
-          <h3 style={{ textAlign: 'center', color: 'black', marginTop: '5px' }}>Contact Us</h3>
+          <h3 style={{ textAlign: 'center', color: 'black', marginTop: '5px' }}>Contact Me</h3>
 
           <div className='inputBox'>
             <input type="text" className="form-input" value={name} onChange={(e) => setName(e.target.value)} required />
