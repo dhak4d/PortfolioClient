@@ -21,6 +21,8 @@ function App() {
         <Route path="/updateAbout" element={<UpdateAbout/>} />
         <Route path="*" element={<div>Error Occurred</div>} />
       </Routes>
+      {/* <Projects />
+      <ContactUs /> */}
       <Footer />
   </React.Fragment> 
   );

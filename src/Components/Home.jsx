@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css';
-import owner from 'D:/Mango Workspace/Capston_Project/frontend/src/Images/owner.png'
+import owner3 from 'D:/Mango Workspace/Capston_Project/frontend/src/Images/owner3.png'
 import { Link } from 'react-router-dom'
 // import { useState, useEffect } from 'react';
 // import {API_BASE_URL} from './Config'
@@ -25,7 +25,7 @@ export default function Home() {
     <>
       <div className='home-page'>
         <div className='image'>
-          <img src={owner} alt="Profile1" className='img' />
+          <img src={owner3} alt="Profile1" className='img' />
           <h2 className='owner-name'>Mangla Nagar</h2>
         </div>
 
@@ -41,16 +41,16 @@ export default function Home() {
 
           <div className='about-me'>
             <div className='para'>
-              
-              <p>I'm a MERN full-stack developer with over a year of experience.
-              I'm possess expertise in the MERN technology stack, consisting of MongoDB, Express.js, React.js, and Node.js.
-              Having a comprehensive understanding of both front-end and back-end development and can develop robust and scalable web applications.
-              My skill set includes proficiency in JavaScript, HTML, CSS, and other relevant programming languages.</p>
+
+              <p>I'm a MERN Stack Developer with over a year of experience.
+                I'm possess expertise in the MERN  Stack technology, consisting of MongoDB, Express js, React js, and Node js.
+                Having a comprehensive understanding of both front-end and back-end development and can develop robust and scalable web applications.
+                My skill set includes proficiency in JavaScript, HTML, CSS, and other relevant programming languages.</p>
 
               {/* {(data.length !== 0) && <ul>
                
                 {data.map((res) => {
-                  
+      
                   return <li>
                     {res.meData}
                   </li>

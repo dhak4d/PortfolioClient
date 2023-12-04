@@ -37,7 +37,6 @@ export default function GetDetails() {
 
           {data.map((res) => {
             return <tr>
-
               <td>{res.name}</td>
               <td>{res.email}</td>
               <td>{res.phone}</td>
