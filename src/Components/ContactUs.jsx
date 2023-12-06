@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './ContactUs.css';
-import { API_BASE_URL } from './Config'
+import { API_BASE_URL, SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from './Config'
 import { FaHome, FaMailBulk, FaPhone } from "react-icons/fa";
 import { useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 
 function ContactUs() {
@@ -15,6 +16,10 @@ function ContactUs() {
   const [phoneError, setPhoneError] = useState('');
   const [messageError, setMessageError] = useState('');
   const [data, setData] = useState('')
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
+
+  const form = useRef();
 
   useEffect(() => {
     const API_URL = API_BASE_URL + '/api/GetAddressInfo';
@@ -67,7 +72,6 @@ function ContactUs() {
 
     // Submit the form
     if (isValid) {
-
       const API_URL = API_BASE_URL + '/api/ContactUs';
       fetch(API_URL, {
         method: 'POST',
@@ -77,17 +81,27 @@ function ContactUs() {
            Accept: 'application/json',
           'Access-Control-Allow-Origin': '*',
         },
-        body: JSON.stringify({ name, email, phone, message }),
+        body: JSON.stringify({ name, email, phone, message }), 
       })
         .then((res) => res.json())
         .then((data) => {
           if (data.status === 'ok') {
-            alert("Contact details successful saved");
+            console.log(name, email, phone, message )
+            alert("Contact details successfully stored");
           } else {
-            alert("Something went wrong with BContactUs");
+            alert("Something went wrong with ContactUs");
           }
           window.location.reload();
         });
+
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+        console.log(result);
+        setSent(true);
+      }, (error) => {
+        console.error(error.text);
+        setError('Failed to send the email. Please try again later.');
+      });
     }
 
 
@@ -103,35 +117,36 @@ function ContactUs() {
       </div>
 
       <div className='form-container'>
-        <form className="form" onSubmit={handleSubmit}>
+        <form  ref={form} className="form" onSubmit={handleSubmit}>
           <h3 style={{ textAlign: 'center', color: 'black', marginTop: '5px' }}>Contact Me</h3>
 
           <div className='inputBox'>
-            <input type="text" className="form-input" value={name} onChange={(e) => setName(e.target.value)} required />
+            <input type="text" className="form-input"  name="from_name" value={name} onChange={(e) => setName(e.target.value)} required />
             <span>Name</span>
             {nameError && <div className="error">{nameError}</div>}
           </div>
 
           <div className='inputBox'>
-            <input type="email" className="form-input" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input type="email" className="form-input" name="from_email" value={email} onChange={(e) => setEmail(e.target.value)} required />
             <span>Email</span>
             {emailError && <div className="error">{emailError}</div>}
           </div>
 
           <div className='inputBox'>
-            <input type="number" className="form-input" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+            <input type="number" className="form-input"  name="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
             <span>Phone</span>
             {phoneError && <div className="error">{phoneError}</div>}
           </div>
 
           <div className='inputBox'>
-            <textarea className="form-input" value={message} onChange={(e) => setMessage(e.target.value)} required />
+            <textarea className="form-input" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
             <span>Message</span>
             {messageError && <div className="error">{messageError}</div>}
           </div>
 
           <div>
             <input type='submit' className="form-btn" value='Send ➟' />
+            {sent && <p>Message sent successfully!</p>}
           </div>
 
         </form>
