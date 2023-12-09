@@ -20,9 +20,9 @@ export default function Projects() {
               <h2>SkillSetMe Portfolio Website</h2>
               <p>Developed my own Portfolio using MERN  Stacktechnology -</p>
               <ul>
-                <li>Designed beautiful UI with the help of frontend technologies JSX, ReactJs</li>
-                <li>Developed backend using ExpressJs, NodeJs for interacting frontend and backend</li>
-                <li>Enabled efficient communication between the frontend and backend through the fetch API</li>
+                <li>Designed beautiful UI with the help of frontend technologies JSX, ReactJs.</li>
+                <li>Developed backend using ExpressJs, NodeJs for interacting frontend and backend.</li>
+                <li>Enabled efficient communication between the frontend and backend through the fetch API.</li>
                 <li>Created database and collection on MongoDB atlas and stablish connection between database to backend.</li></ul>
               <div className='project-link'>
                 <img src={github} alt='NoImage' />
@@ -62,10 +62,10 @@ export default function Projects() {
               <p>A comprehensive application utilizing a stack of technologies to deliver
                  a seamless experience.</p>
               <ul>
-                <li>Implemented React Routing for smooth page navigation</li>
+                <li>Implemented React Routingfor smooth page navigation</li>
                 <li>Employed Axios for efficient handling of HTTP requests and responses.</li>
                 <li>Integrated CORS to ensure secure communication by restricting domain access.</li>
-                <li>Enhanced security by encrypting and decrypting passwords using the bcryptjs package.</li>
+                <li>Enhanced security by encrypting and decrypting passwords using the bcryptjs package .</li>
                 <li>Utilized .env for secure configuration management</li>
                 </ul>
               <div className='project-link'>

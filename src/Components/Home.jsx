@@ -31,12 +31,16 @@ export default function Home() {
 
         <div className='heading'>
           <h1 className='heading1'>Hello,</h1>
-          <p className='heading2'>a bit about me:</p>
+          <p className='heading2'><span class="title-word title-word-1"> a </span>
+            <span class="title-word title-word-2"> bit </span>
+            <span class="title-word title-word-3"> about </span>
+            <span class="title-word title-word-4"> me:</span></p>
 
           <div className='Button'>
-            <button className='btn1'><Link to='https://flowcv.com/resume/stso1hv6is' className='btn-l'>MY RESUME</Link></button>
+            <button className='btn1' ><Link to='https://flowcv.com/resume/stso1hv6is' className='btn-l'>MY RESUME</Link></button>
             <button className='btn2'><Link to='/projects' className='btn-l'>MY WORK</Link></button>
             <button className='btn3'><Link to='#' className='btn-l'>MY SKILLS</Link></button>
+
           </div>
 
           <div className='about-me'>

@@ -17,6 +17,7 @@
     background-image: linear-gradient(rgb(24, 24, 24), rgb(160, 20, 123)); 
     flex-wrap: wrap;
     border-radius: 5px;
+    
   }
   .nav-item{
     list-style: none;
@@ -28,12 +29,29 @@
     text-decoration: none;
     font-size: large;
     color: white;
+    transition: all 200ms ease-out;
     /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0,6); */
+    
   }
   
-  .navlink:hover{
+  /* .navlink:hover{
     color: rgb(29, 105, 219);
     border-bottom: 3px solid rgb(29, 105, 219);
+  } */
+
+  .navlink:hover ~ hr {
+    width: 100%;
+    transition: all 200ms ease-out;
   }
+  
+  hr {
+    width: 0px;
+    height: 3px;
+    background: var(--underline);
+    border: var(--underline);
+    margin: 0px;
+    transition: width 450ms ease-out;
+  }
+  
   
   
