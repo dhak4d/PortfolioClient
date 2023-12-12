@@ -1,0 +1,204 @@
+
+.skill {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 120px 120px 120px 100px;
+    column-gap: 10px;
+    row-gap: 40px;
+    background-color: rgb(19, 18, 18);
+    
+}
+
+.md-skill {
+    margin: 120px 100px 100px 250px;  
+}
+
+.md-skill:hover{
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+}
+
+h3{
+    width: 140px;
+    height: 10px;
+    padding-left: 40px;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 2px rgb(2, 2, 2);
+    margin-left: 25px;
+}
+
+.md-skill p {
+    text-align: center;
+}
+
+span:hover + p {
+    display: block;
+}
+
+.react-p{
+    width: 600px;
+    height: 90px;
+    background-color: rgb(67, 88, 171);
+    padding: 10px;
+    display: none;
+    margin-top: 180px;
+    color: aliceblue;
+}
+
+.react-p::first-letter{
+    font-weight: bold
+}
+
+.node-p{
+    width: 600px;
+    height: 90px;
+    background-color: rgb(40, 148, 11);
+    padding: 5px;
+    display: none;
+    margin-top: 180px;
+    color: aliceblue;
+}
+.ex-h3{
+    padding-left: 35px;
+}
+.express-p{
+    width: 600px;
+    height: 90px;
+    background-color: rgb(93, 89, 94);
+    padding: 5px;
+    display: none;
+    margin-top: 180px;
+    color: aliceblue;
+}
+.mongo-h3{
+    padding-left: 35px;
+}
+.mongoDB-p{
+    width: 400px;
+    height: 150px;
+    background-color: rgb(12, 91, 6);
+    padding: 5px;
+    display: none;
+    margin-top: 180px;
+    color: aliceblue;
+    
+}
+.js-h3{
+    padding-left: 30px;
+}
+.js-p{
+    width: 300px;
+    height: 180px;
+    background-color: rgb(160, 117, 51);
+    padding: 5px;
+    display: none;  
+    margin-top: 20px; 
+    color: aliceblue;
+}
+
+.html-p{
+    width: 600px;
+    height: 90px;
+    background-color: rgb(174, 88, 22);
+    padding: 5px;
+    display: none;
+    margin-top: 40px;
+    color: aliceblue;
+}
+.css-h3{
+    padding-left: 50px;  
+}
+.css-p{
+    width: 600px;
+    height: 90px;
+    background-color: rgb(21, 93, 138);
+    padding: 5px;
+    display: none;
+    margin-top: 40px;
+    color: aliceblue;
+}
+
+.git-h3{
+    padding-left: 60px;
+}
+
+.git-p{
+    width: 500px;
+    height: 80px;
+    background-color: rgb(157, 157, 157);
+     color: black;
+    padding: 5px;
+    display: none;
+    margin-top: 40px;
+}
+
+
+.github-p{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(63, 153, 160);
+    padding: 5px;
+    display: none;
+    margin-top: 40px;
+    color: aliceblue;
+}
+
+
+
+@media(max-width:768px) {
+    .skill {
+        display: grid;
+        width: 100%; 
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        background-color: rgb(19, 18, 18);
+        row-gap: 60px;
+    }
+
+    .md-skill {
+        color: white;
+        box-shadow: 15px 15px 10px rgb(134, 110, 110);
+        margin-left: 40px;
+        margin-top: 200px;
+    }
+
+    .md-skill:hover{
+        box-shadow: 0px 10px 15px rgba(165, 149, 149, 0.3);
+        transform: scale(1.2);
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .md-skill h3{
+        /* padding-left: 45px; */
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .react-h3{
+       padding-left: 30px; 
+    }
+    .node-h3{
+        padding-left: 30px; 
+     }
+    .css-h3{
+        padding-left: 40px;  
+    }
+    .git-h3{
+        padding-left: 50px;
+    }
+
+    span:hover + p {
+        display: none;
+    }
+    
+}

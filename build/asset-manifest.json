@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd5b07f4.css",
-    "main.js": "/static/js/main.036cc8be.js",
+    "main.css": "/static/css/main.b0372da7.css",
+    "main.js": "/static/js/main.147251f8.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/Netflix.png": "/static/media/Netflix.c96125c5d73fe193207f.png",
     "static/media/bg.jpg": "/static/media/bg.d94877561f233014464e.jpg",
@@ -9,17 +9,16 @@
     "static/media/owner3.png": "/static/media/owner3.50d9d5a2bd374efa4880.png",
     "static/media/dataVisual.png": "/static/media/dataVisual.ac5c30959463fba54339.png",
     "static/media/skillSetMe.png": "/static/media/skillSetMe.f312cafe3409e3f2b78c.png",
-    "static/media/instagram.svg": "/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/github.svg": "/static/media/github.adb057e9b81365542cdfd2327c007aa2.svg",
     "static/media/twitter.svg": "/static/media/twitter.fe06d572bd13680e66f4d31fc7cf1832.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "main.bd5b07f4.css.map": "/static/css/main.bd5b07f4.css.map",
-    "main.036cc8be.js.map": "/static/js/main.036cc8be.js.map",
+    "main.b0372da7.css.map": "/static/css/main.b0372da7.css.map",
+    "main.147251f8.js.map": "/static/js/main.147251f8.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd5b07f4.css",
-    "static/js/main.036cc8be.js"
+    "static/css/main.b0372da7.css",
+    "static/js/main.147251f8.js"
   ]
 }

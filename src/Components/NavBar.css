@@ -34,24 +34,23 @@
     
   }
   
-  /* .navlink:hover{
+  .navlink:hover{
     color: rgb(29, 105, 219);
     border-bottom: 3px solid rgb(29, 105, 219);
-  } */
+  }
 
-  .navlink:hover ~ hr {
+.navlink:hover ~ hr {
     width: 100%;
     transition: all 200ms ease-out;
   }
   
   hr {
-    width: 0px;
+    width: 5px;
     height: 3px;
     background: var(--underline);
     border: var(--underline);
     margin: 0px;
     transition: width 450ms ease-out;
-  }
+  } 
   
-  
-  
+   

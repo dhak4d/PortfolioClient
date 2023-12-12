@@ -27,6 +27,8 @@ export default function Home() {
         <div className='image'>
           <img src={owner3} alt="Profile1" className='img' />
           <h2 className='owner-name'>Mangla Nagar</h2>
+          <div className='text-typing'><p>MERN Stack Developer</p></div>
+         
         </div>
 
         <div className='heading'>
@@ -39,7 +41,7 @@ export default function Home() {
           <div className='Button'>
             <button className='btn1' ><Link to='https://flowcv.com/resume/stso1hv6is' className='btn-l'>MY RESUME</Link></button>
             <button className='btn2'><Link to='/projects' className='btn-l'>MY WORK</Link></button>
-            <button className='btn3'><Link to='#' className='btn-l'>MY SKILLS</Link></button>
+            <button className='btn3'><Link to='/skills' className='btn-l'>MY SKILLS</Link></button>
 
           </div>
 
