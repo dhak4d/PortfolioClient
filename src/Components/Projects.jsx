@@ -16,9 +16,9 @@ export default function Projects() {
           <div className='project-box'>
             <div><img src={skillSetMe} alt='NoImage' className='portfolio-img'/></div>
             <div className='all'>
-              <h4>PortFolio Website</h4>
-              <h2>SkillSetMe Portfolio Website</h2>
-              <p>Developed my own Portfolio using MERN  Stacktechnology -</p>
+              <h4>My Portfolio</h4>
+              <h2>Live Portfolio Web-App  </h2>
+              <p>Developed my own Portfolio using MERN Stack technology-</p>
               <ul>
                 <li>Designed beautiful UI with the help of frontend technologies JSX, ReactJs.</li>
                 <li>Developed backend using ExpressJs, NodeJs for interacting frontend and backend.</li>
@@ -35,8 +35,8 @@ export default function Projects() {
         <div className='project-down-box1'>
           <div className='project-down-box'>
             <div><img src={eCom} alt='NoImage' /> </div>
-            <h4>Ecomm Website</h4>
-            <h3>Ecommerce Website</h3>
+            <h4>Ecomm</h4>
+            <h3>Ecommerce Web-App</h3>
             <div className='project-down-div'><Link to='https://github.com/dhak4d/E-comm_with_Js' className='project-down-Link'>Visit</Link>
               <img src={github} alt='NoImage' />
             </div>
@@ -44,8 +44,8 @@ export default function Projects() {
 
           <div className='project-down-box'>
             <div><img src={dataVisual} alt='NoImage' />
-              <h4>Charts_Visuals</h4>
-              <h3>Charts Visualization</h3>
+              <h4>Chart Visuals</h4>
+              <h3>Chart Visualization</h3>
               <div className='project-down-div'><Link to='https://github.com/dhak4d/Chart_Visuals' className='project-down-Link'>Visit</Link>
                 <img src={github} alt='NoImage' />
               </div>
@@ -57,8 +57,8 @@ export default function Projects() {
           <div className='project-box'>
             <div><img src={Netflix} alt='NoImage' className='netflix-img' /></div>
             <div className='all'>
-              <h4>Netflix Website</h4>
-              <h2>Netflix Clone Website</h2>
+              <h4>Netflix</h4>
+              <h2>Netflix Clone </h2>
               <p>A comprehensive application utilizing a stack of technologies to deliver
                  a seamless experience.</p>
               <ul>

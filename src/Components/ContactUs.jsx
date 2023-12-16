@@ -147,6 +147,7 @@ function ContactUs() {
           <div>
             <input type='submit' className="form-btn" value='Send ➟' />
             {sent && <p>Message sent successfully!</p>}
+            
           </div>
 
         </form>

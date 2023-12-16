@@ -22,20 +22,15 @@
   font-family: 'Brush Script MT';
   font-size: 40px;
 }
+
 .text-typing p {
-   color: rgb(193, 145, 153);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-left: 220px;
-  font-size: 20px;
-  background:#040404;
+  color: rgb(193, 145, 153);
+  margin-left: 233px;
+  font-size: 15px;
   font-family:monospace;
-  border-radius:10px;
-}
-.text-typing p {
   white-space:nowrap;
-  overflow:hidden;
-  animation: typing-erasing 10s infinite;
-  
+  overflow: hidden; 
+  animation: typing-erasing 10s infinite;    
 }
 
 @keyframes typing-erasing {
@@ -43,7 +38,7 @@
     width: 0; 
   }
   20%, 60%{
-    width: 100%; 
+    width: 50%; 
   }
 }
 
@@ -304,9 +299,9 @@
   .image p{
     color: rgb(193, 145, 153);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 25%;
+    margin-left: 28.5%;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
   }
   
 
